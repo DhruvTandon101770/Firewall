@@ -1,0 +1,12 @@
+sudo apt update
+sudo apt install ufw
+sudo ufw enable
+sudo ufw allow ssh
+sudo ufw allow 22/tcp
+sudo ufw allow http
+sudo ufw allow https
+sudo ufw allow 8080/tcp
+sudo ufw allow 1000:2000/tcp
+sudo ufw allow from 10.0.2.15
+sudo ifw status verbose
+sudo ufw logging on
